@@ -14,3 +14,16 @@ sudo apt install liblua5.3-dev
     - libsdl2-ttf-dev true type fonts
     - libsdl2-mixer-dev for sound
 - liblua5.3-dev LUA
+
+## Minimal build
+g++ Main.cpp -o Main
+
+flags:
+-Wall show all the warnings
+-std=c++17 use c++17
+
+ie:
+g++ -Wall -std=c++17 Main.cpp -o Main
+
+therefor we want to use gnu Make 
+just type make
