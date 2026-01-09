@@ -61,4 +61,9 @@ collect2: error: ld returned 1 exit status
     * it well grab the body of the function
 
 # Makefile
-on linux use: -llua5.3
+* make fiel will run the line in that section on the make file
+* ie make build runs: clang++ -Wall -std=c++17 ./src/*.cpp -lSDL2 -o gameEngine;
+
+* on linux use: -llua5.3
+
+
