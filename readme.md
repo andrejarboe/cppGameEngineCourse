@@ -59,5 +59,6 @@ collect2: error: ld returned 1 exit status
 * the the Linker
     * this will bundle everything together
     * it well grab the body of the function
-    
 
+# Makefile
+on linux use: -llua5.3
