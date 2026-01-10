@@ -66,4 +66,6 @@ collect2: error: ld returned 1 exit status
 
 * on linux use: -llua5.3
 
+# /libs folder and SDL 
+* SDL we are going to use SDL 2
 
