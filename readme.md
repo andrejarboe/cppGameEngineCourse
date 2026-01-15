@@ -72,3 +72,33 @@ collect2: error: ld returned 1 exit status
 # Compiling 
 * include all the header files
     * -I"./libs"
+
+## Library Binaries
+* Why did we have to download the binaries of SDL and Lua but NOT glm, imgui, sol
+	* glm, imgui, and sol are just header files so we can compile them each time
+		* this will add the entire source code into the project
+	 * SDL and Lua: We got the precompiled binary version of the library implementations from the website for the correct OS
+	* sudo apt install
+	* we are not compiling the whole source code of SDL and Lua
+	* we are only linking the parts that we need
+	* glm, imgui, sol are raw source code
+	* Lua and SDL will only show the .h file, not the .cpp files
+		* The linker we go and link from the binary on the OS 
+		* That is why we did: -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer -llua5.3 , because we have the binaries
+    * Binaries are faster
+
+## Static vs Dynamic Libraries
+
+- **Libraries**: Reusable compiled code used by multiple programs
+
+### Static Linking (LIB / .a)
+- Code is copied into the program at **link time**
+- Each program has its **own copy**
+- Not shared between programs
+- File extensions: `.lib` (Windows), `.a` (Unix)
+
+### Dynamic Linking (DLL / .so)
+- Code is linked **at runtime**
+- **One shared copy** used by multiple programs
+- Saves disk space and memory
+- File extensions: `.dll` (Windows), `.so` (Unix)
