@@ -69,3 +69,6 @@ collect2: error: ld returned 1 exit status
 # /libs folder and SDL 
 * SDL we are going to use SDL 2
 
+# Compiling 
+* include all the header files
+    * -I"./libs"
