@@ -7,11 +7,13 @@
 #include <imgui/imgui.h>
 #include <sol/sol.hpp>
 
-int main() {
-    sol::state lua;
-    lua.open_libraries(sol::lib::base);
-    SDL_Init(SDL_INIT_EVERYTHING);
-    std::cout << "Hello, world!" << std::endl;
+int main(int argc, char *argv[])
+{
+    Game game;
+
+    game.intialize();
+    game.Run();
+    game.Destroy();
+
     return 0;
 }
-
