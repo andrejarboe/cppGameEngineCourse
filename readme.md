@@ -7,6 +7,7 @@ sudo apt install libsdl2-image-dev
 sudo apt install libsdl2-ttf-dev
 sudo apt install libsdl2-mixer-dev
 sudo apt install liblua5.3-dev
+sudo apt install clang
 
 - build essential installations for the compiler and things we need for C++.
 - libsdl2-dev SDL2 library
