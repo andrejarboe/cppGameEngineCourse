@@ -9,11 +9,11 @@
 
 int main(int argc, char *argv[])
 {
-    // Game game;
+    Game game;
 
-    // game.intialize();
-    // game.Run();
-    // game.Destroy();
+    game.intialize();
+    game.Run();
+    game.Destroy();
 
     return 0;
 }
