@@ -103,3 +103,6 @@ collect2: error: ld returned 1 exit status
 - **One shared copy** used by multiple programs
 - Saves disk space and memory
 - File extensions: `.dll` (Windows), `.so` (Unix)
+
+## Game Class
+* "Game.h" quite mean it is in the same folder
