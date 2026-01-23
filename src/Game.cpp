@@ -2,11 +2,11 @@
 #include <iostream>
 
 Game::Game(){
-    std::cout << "Game constructor called  from Game" << std::endl;
+    std::cout << "Game constructor called from Game" << std::endl;
 }
 
 Game::~Game(){
-    std::cout << "Game destructor called  from Game" << std::endl;
+    std::cout << "Game destructor called from Game" << std::endl;
     
 }
 
