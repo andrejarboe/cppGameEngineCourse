@@ -106,3 +106,9 @@ collect2: error: ld returned 1 exit status
 
 ## Game Class
 * "Game.h" quite mean it is in the same folder
+* ```#pragmaOnce ``` replaces:  
+    ``` 
+        #ifndef GAME_H 
+        #define GAME_H
+        #endif
+    ```
